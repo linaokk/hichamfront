@@ -1,0 +1,226 @@
+/* Home.css */
+
+/* Home container styles */
+.home {
+    background: url('./clear-yellow-wall.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+/* Hero section styles */
+.hero {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-top: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+/* Button styles */
+.btn-primary {
+    background-color: #fbc531;
+    border-color: #fbc531;
+    padding: 10px 30px;
+    /* Add padding to make the button look 3D */
+    box-shadow: 0 5px 0 #e5aa24;
+    /* Add a box shadow to create a 3D effect */
+    transition: box-shadow 0.2s;
+}
+
+.btn-primary:hover {
+    box-shadow: 0 3px 0 #e5aa24;
+    /* Change the box shadow on hover for interaction */
+    background-color: #e5aa24;
+    border-color: #e5aa24;
+}
+
+/* Home container styles */
+.home {
+    background: url('./clear-yellow-wall.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+/* Hero section styles */
+.hero {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-top: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+/* Button styles */
+.btn-primary {
+    background-color: #fbc531;
+    border-color: #fbc531;
+    padding: 10px 30px;
+    box-shadow: 0 5px 0 #e5aa24;
+    transition: box-shadow 0.2s;
+}
+
+.btn-primary:hover {
+    box-shadow: 0 3px 0 #e5aa24;
+    background-color: #e5aa24;
+    border-color: #e5aa24;
+}
+
+/* Social icons styles */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #2f3640;
+    /* Change the icon color */
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ffa502;
+    /* Change icon color on hover */
+}
+
+/* Plan container styles */
+
+
+.plans {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.plan {
+    background: #f0f0f0;
+    /* Change background color to a compatible color */
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    /* Add border radius for rounded corners */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* Add 3D box shadow */
+    transition: transform 0.2s, box-shadow 0.2s;
+    width: 30%;
+    margin: 10px;
+}
+
+.plan:hover {
+    transform: scale(1.05);
+    /* Add a scaling effect on hover for 3D interaction */
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.plan h2 {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.plan p {
+    font-size: 20px;
+    color: #2f3640;
+    /* Change the price color to #2ed573 */
+    margin: 10px 0;
+}
+
+.plan ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.plan ul li {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.plan a {
+    background-color: #ffa502;
+    /* Red color for the plan buttons */
+    border-color: #ffa502;
+    padding: 10px 30px;
+    border-radius: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.plan a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-100%);
+    transition: transform 0.2s;
+}
+
+.plan a:hover::before {
+    transform: translateY(0);
+}
+
+.plan a:hover {
+    background-color: #f4c860;
+    /* Change the button hover background color */
+    border-color: #f4ef60;
+    /* Change the border color on hover */
+}
+
+/* Style for included and excluded features */
+.plan ul li.included {
+    color: #ffa502;
+    /* Orange color for included features */
+    font-weight: bold;
+    /* Make the font bold */
+}
+
+.plan ul li.excluded {
+    color: #ff4757;
+    /* Red color for excluded features */
+    font-weight: bold;
+    /* Make the font bold */
+    text-decoration: line-through;
+    opacity: 0.7;
+    /* Reduce opacity for excluded features */
+}
+
+/* Checkmark and X mark styles */
+.plan ul li i {
+    margin-right: 5px;
+    font-size: 16px;
+}
+
+.plan ul li i.fa-times {
+    color: #e84118;
+    /* Red color for X mark */
+}
+
+.plan ul li i.fa-check {
+    color: #4cd137;
+    /* Green color for checkmark */
+}
