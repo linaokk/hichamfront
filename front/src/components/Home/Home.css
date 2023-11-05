@@ -1,0 +1,205 @@
+/* Home.css */
+
+/* Home container styles */
+.home {
+    background: url('./clear-yellow-wall.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed; /* Keep the background fixed while scrolling */
+    min-height: 100vh; /* Set minimum height to cover the full viewport */
+}
+
+/* Hero section styles */
+.hero {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-top: 20px;
+}
+
+hero p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+/* Button styles */
+.btn-primary {
+    background-color: #fbc531;
+    border-color: #fbc531;
+    padding: 10px 30px;
+    box-shadow: 0 5px 0 #e5aa24;
+    transition: box-shadow 0.2s;
+}
+
+.btn-primary:hover {
+    box-shadow: 0 3px 0 #e5aa24;
+    background-color: #e5aa24;
+    border-color: #e5aa24;
+}
+
+/* Social icons styles */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #2f3640;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ffa502;
+}
+
+/* Plan container styles */
+.plans {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.plan {
+    background: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: transform 0.2s, box-shadow 0.2s;
+    width: 20%;
+    margin: 10px;
+    height: 13cm;
+}
+
+.plan:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.plan h2 {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.plan p {
+    font-size: 20px;
+    color: #2f3640;
+    margin: 10px 0;
+}
+
+.plan ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.plan ul li {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.plan a {
+    background-color: #ffa502;
+    border-color: #ffa502;
+    padding: 10px 30px;
+    border-radius: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.plan a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-100%);
+    transition: transform 0.2s;
+}
+
+.plan a:hover::before {
+    transform: translateY(0);
+}
+
+.plan a:hover {
+    background-color: #f4c860;
+    border-color: #f4ef60;
+}
+
+/* Style for included and excluded features */
+.plan ul li.included {
+    color: #ffa502;
+    font-weight: bold;
+}
+
+.plan ul li.excluded {
+    color: #ff4757;
+    font-weight: bold;
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+
+/* Footer section styles */
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left {
+    flex: 1;
+    margin-left: 1cm;
+}
+
+.footer-left h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.footer-left p {
+    font-size: 16px;
+}
+
+.footer-right {
+    flex: 1;
+    text-align: right;
+}
+
+/* Social icons styles */
+.footer-social-icons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    margin-right: 1cm;
+}
+
+.footer-social-icons a {
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.footer-social-icons a:hover {
+    color: #fbc531;
+}
