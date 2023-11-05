@@ -1,125 +1,189 @@
-/* Login.css */
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
 
-/* Apply the background image to the whole page */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Raleway, sans-serif;
+}
+
 body {
-    background: url('./login.jpg') no-repeat center center fixed;
-    background-size: cover;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-    font-family: 'Rubik', sans-serif; /* Apply Rubik font */
-  }
-  
-  /* Container styles */
-  .login-container {
-    background: rgba(255, 255, 255, 0.8);
-    padding: 40px;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    width: 200%;
-    max-width: 400px;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    font-family: 'Rubik', sans-serif; /* Apply Rubik font */
-  }
-  
-  .form-group {
-    margin-bottom: 20px;
-  }
-  
-  label {
-    font-size: 16px;
-    font-family: 'Rubik', sans-serif; /* Apply Rubik font */
-  }
-  
-  input {
-    width: 100%;
-    padding: 10px;
-    font-size: 14px;
-    border: 1px solid #ccc;
-    border-radius: 9px;
-    font-family: 'Rubik', sans-serif; /* Apply Rubik font */
-  }
-  
-  a {
-    text-decoration: none;
-    font-size: 14px;
-    font-family: 'Rubik', sans-serif; /* Apply Rubik font */
-  }
-  
-  .forgot-password-btn {
-    text-decoration: underline;
-    color: #e5aa24;
-    cursor: pointer;
-    font-size: 16px;
-    margin-bottom: 10px;
-    font-style: italic;
-    font-family: 'Rubik', sans-serif; /* Apply Rubik font */
-  }
-  
-  .button-3d {
-    background-color: #e5aa24;
-    border: 1px solid transparent;
-    border-radius: 10px;
-    color: #fff;
-    padding: 10px 30px;
-    font-size: 17px;
-    cursor: pointer;
-    transition: transform 0.2s, box-shadow 0.2s;
-    font-weight: bold;
-    margin-top: 10px;
-    font-family: 'Rubik', sans-serif; /* Apply Rubik font */
-  }
-  
-  .button-3d:hover {
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    transform: translateY(-3px);
-  }
-  
-  .button-3d:active {
-    transform: translateY(10px);
-  }
-  
-  /* Adjust styles for screens with a maximum width of 768px (tablets) */
-  @media (max-width: 768px) {
-    .login-container {
-      margin: 50px auto;
-      padding: 10px;
-      max-width: 100%;
-    }
-  
-    h1 {
-      font-size: 20px;
-    }
-  
-    input {
-      font-size: 12px;
-    }
-  }
-  
-  /* Adjust styles for screens with a maximum width of 480px (mobile phones) */
-  @media (max-width: 480px) {
-    .login-container {
-      margin: 30px auto;
-      padding: 10px;
-      max-width: 100%;
-    }
-  
-    h1 {
-      font-size: 18px;
-    }
-  
-    input {
-      font-size: 12px;
-    }
-  }
-  
+  background: url('login.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: Raleway, sans-serif;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.screen {
+  background: linear-gradient(90deg, #31312e, #f27935);
+  position: relative;
+  height: 600px;
+  width: 360px;
+  box-shadow: 0px 0px 24px #000; /* Add a shadow to the container */
+}
+
+.screen__content {
+  z-index: 1;
+  position: relative;
+  height: 100%;
+}
+
+.screen__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  -webkit-clip-path: inset(0 0 0 0);
+  clip-path: inset(0 0 0 0);
+}
+
+.screen__background__shape {
+  transform: rotate(45deg);
+  position: absolute;
+}
+
+.screen__background__shape1 {
+  height: 520px;
+  width: 520px;
+  background: #FFF;
+  top: -50px;
+  right: 120px;
+  border-radius: 0 72px 0 0;
+}
+
+.screen__background__shape2 {
+  height: 220px;
+  width: 220px;
+  background: #e67e22;
+  top: -172px;
+  right: 0;
+  border-radius: 32px;
+}
+
+.screen__background__shape3 {
+  height: 540px;
+  width: 190px;
+  background: linear-gradient(270deg, #f39c12, #f39c12);
+  top: -24px;
+  right: 0;
+  border-radius: 32px;
+}
+
+.screen__background__shape4 {
+  height: 400px;
+  width: 200px;
+  background: #d35400;
+  top: 420px;
+  right: 50px;
+  border-radius: 60px;
+}
+
+h1 {
+  font-size: 24px;
+  color: #f1f2f6;
+  text-align: center;
+  margin-top: 50px;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.login {
+  width: 320px;
+  padding: 30px;
+  padding-top: 156px;
+}
+
+.login__field {
+  padding: 20px 0px;
+  position: relative;
+}
+
+.login__icon {
+  position: absolute;
+  top: 30px;
+  color: #d35400;
+}
+
+.login__input {
+  border: none;
+  border-bottom: 2px solid #576574;
+  background: none;
+  padding: 10px;
+  padding-left: 24px;
+  font-weight: 700;
+  width: 75%;
+  transition: 0.2s;
+}
+
+.login__input:active,
+.login__input:focus,
+.login__input:hover {
+  outline: none;
+  border-bottom-color: #000000;
+}
+
+.login__submit {
+  background: #222529;
+  font-size: 14px;
+  margin-top: 30px;
+  padding: 16px 20px;
+  border-radius: 26px;
+  border: 1px solid #030303;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  color: #fefefe;
+  box-shadow: 0px 2px 2px #222f3e;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.login__submit:active,
+.login__submit:focus,
+.login__submit:hover {
+  border-color: #343438;
+  outline: none;
+}
+
+
+.forget__submit {
+  background: #222529;
+  font-size: 14px;
+  margin-top: 30px;
+  padding: 16px 20px;
+  border-radius: 26px;
+  border: 1px solid #000000;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  width: 80%;
+  color: #fefefe;
+  box-shadow: 0px 2px 2px #222f3e;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+
+.forget__submit:active,
+.forget__submit:focus,
+.forget__submit:hover {
+  border-color: #343438;
+  outline: none;
+}
+
+
+.button__icon {
+  font-size: 24px;
+  margin-left: auto;
+  color: #313137;
+}
